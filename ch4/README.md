@@ -2,8 +2,6 @@
 
 ## 最尤推定(Maximum likelyhood estimation)
 
-aaaaaa
+## MAP推定(Maximum a posteriori)
 
-<img src="https://latex.codecogs.com/gif.latex?X[n]&space;=&space;\sum_{k=0}^{N-1}x[k]\exp({-j\frac{2&space;\pi&space;nk}{N}})"/>
-
-を計算します。
+## ベイズ推定(Bayesian Approach)
