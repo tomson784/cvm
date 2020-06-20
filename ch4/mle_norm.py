@@ -1,3 +1,5 @@
+# Computer vision: models, learning and inference
+# Chapter 4.1
 # Maximum likelyhood estimation
 
 import numpy as np
@@ -6,8 +8,8 @@ from scipy.stats import norm
 
 def mle_norm(x):
     N = len(x)
-    mu = np.sum(x)/N
-    var = np.sum((x - mu)**2)/N
+    mu = np.sum(x)/N                # (4.12)
+    var = np.sum((x - mu)**2)/N     # (4.13)
     return mu, var
 
 original_mu = 5
@@ -19,9 +21,6 @@ r = original_mu + original_sig * np.random.randn(100,1)
 estimated_sig = np.sqrt(estimated_var)
 
 # Estimate and print the error for the mean and the standard deviation.
-# muError = abs(original_mu - estimated_mu)
-# sigError = abs(original_sig - estimated_sig)
-# disp([muError, sigError])
 
 # Plot the original and the estimated models for comparison.
 x = np.arange(-20, 30, 0.01)
