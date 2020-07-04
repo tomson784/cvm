@@ -17,7 +17,7 @@ original_sig = 8
 r = original_mu + original_sig * np.random.randn(100,1)
 
 # Estimate the mean and the variance for the data in r.
-[estimated_mu, estimated_var] = mle_norm(r)
+estimated_mu, estimated_var = mle_norm(r)
 estimated_sig = np.sqrt(estimated_var)
 
 # Estimate and print the error for the mean and the standard deviation.
